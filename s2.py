@@ -88,7 +88,3 @@ predicciones = np.expm1(predicciones_log)  # Destransformar predicciones
 for i in range(len(X_test)):
     real = np.expm1(y_test.iloc[i])  # Destransformar valor real
     print(f"Datos reales: {real}, Predicción: {predicciones[i][0]}")
-
-plt.boxplot(data['Capitalizacion_de_mercado_log'])
-plt.title("Distribución de la Capitalización de mercado")
-plt.show()

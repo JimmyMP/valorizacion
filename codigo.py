@@ -11,10 +11,9 @@ import random
 # Configurar codificación para caracteres especiales
 import sys
 sys.stdout.reconfigure(encoding='utf-8')
-n=64
-random.seed(n)
-np.random.seed(n)
-tf.random.set_seed(n)
+random.seed(64)
+np.random.seed(64)
+tf.random.set_seed(64)
 # Cargar los datos normalizados
 data = pd.read_csv('variables_fintech_normalizado.csv', sep=';')
 
